@@ -1,0 +1,46 @@
+French :
+
+Vous avez uniquement besoin du script referenceToDB.py pour insérer une référence dans la base de données. Il faut regarder au préalable les noms compris dans la table 'Reference' de la base de données, pour ne pas avoir deux noms différents pour la même chose.
+
+Vous pouvez utiliser le script reference_plot.py pour afficher un spectre.
+
+Une référence ne comprend que les données wavelengths/intensities et le nom de la référence. 
+
+Le script "resize_reference.py" sert à convertir un fichier avec trop d'abscisses (c'est à dire de valeurs) dans un fichier avec le même nombre d'abscisses que dans la base de données (pour se faire, il faut préciser au script quel fichier a le bon format et ce dernier servira de 'modèle').
+
+Le script spectres_references/mini_parser.py convertit les références données par Gustavo en un fichier contenant uniquement les couples wavelengths/intensities. Ensuite, il suffit de transformer ces fichiers grâce à "resize_reference.py" dans le bon format (bon nombre d'abscisses).
+
+
+Conventions :
+
+Après la transformation réalisée par mini_parser.py, le nom du fichier-résultat sera '..._parser.txt'.
+Après la transformation réalisée par 'resize_reference.py', le nom du fichier-résultat sera '..._precis.txt'. Ce sera les données de ce fichier qu'on enverra dans la base de données. 
+
+Documentation des scripts :
+
+- referenceToDB.py : entrer en argument le nom du fichier et le nom de la référence. 
+Ex :  python referenceToDB.py spectres_references/o2_precis.txt o2
+- resize_reference.py : entrer en argument le nom d'un fichier avec le bon format, le nom du fichier à formater, et le nom du fichier qui comprendra le résultat (si ce dernier n'existe pas, il sera créé)
+Ex :  python resize_reference.py spectres_references/neon_OC.txt spectres_references/O2_parser.txt spectres_references/o2_precis.txt
+- mini_parser.py : normalement vous n'en aurez pas besoin. Si vous l'utilisez, entrez en arguments le nom du fichier à formater et le nom du fichier qui prendra le résultat (si ce dernier n'existe pas, il sera créé).
+Ex : python mini_parser.py O2-Oxigeno.xls O2_parser.txt
+
+
+
+
+English :
+
+You only need to execute the script referenceToDB.py to insert a reference into the database. Look at the table 'Reference' into the database to find the name of the references.
+
+A reference only need the wavelengths/intensities and the name of the reference. We don't need any other meta-data. 
+
+The script "resize_reference.py" is useful to transform a file with too much wavelengths to a file with the same length as a model.
+
+The script spectres_references/mini_parser.py convert the references given by Gustavo into a file with only wavelengths/intensities, et then you can use "resize_reference.py" on these files to a reference with a good format.
+
+Conventions :
+After the transformation made by mini_parser.py, the name of a file is '..._parser.txt'.
+After the transformation made by 'resize_reference.py', the name of the final file is ..._precis.txt. 
+
+
+

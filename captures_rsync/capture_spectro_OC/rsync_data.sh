@@ -1,0 +1,2 @@
+sudo sshpass -p "manatee" rsync -avz --remove-source-files -e ssh pi@62.220.135.214:/home/pi/spectrometer/spectrums/ /home/pi/captures_rsync/capture_spectro_OC/dossier_sync/
+sudo sshpass -p "manatee" rsync -avz --remove-source-files -e "ssh -p 3000" pi@62.220.135.214:/home/pi/spectrometer/ /home/pi/captures_rsync/capture_spectro_OC/dossier_sync_img/

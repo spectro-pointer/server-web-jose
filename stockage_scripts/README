@@ -1,0 +1,5 @@
+Il y a 4 dossiers comprenant les scripts :
+reference/ contient les script concernant les spectres de references.
+capture/ contient les scripts concernant les spectres des captures.
+archives/ contient d'anciens fichiers. Normalement, vous n'en aurez pas besoin.
+comparaison/ contient l'algorithme pour comparer deux signaux et obtenir leur pourcentage de correspondance.

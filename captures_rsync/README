@@ -1,0 +1,2 @@
+Le dossier captures_rsync comporte les scripts pour recuperer les captures grace a une synchronisation rsync. Il organise le traitement et le tri des images et des spectres recus.
+

@@ -1,0 +1,3 @@
+Le dossier dossier_sync permet de recuperer tous les fichiers des spectro pointers connectes. Cela se fait grace aux scripts sh.
+Le dossier archives comprend les fichiers deja traites (i.e deja montes sur la base de donnees).
+Les fichiers .py sont utilises pour traiter les donnees. Ils sont appeles par les scripts Shell de ce dossier.

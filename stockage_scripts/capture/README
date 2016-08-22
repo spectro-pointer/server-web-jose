@@ -1,0 +1,14 @@
+French :
+
+Vous avez uniquement besoin d'utiliser le script captureToDB.py pour insérer une capture dans la base de données. 
+Les captures sont dans des fichiers avec un format identiques à ceux mis en examples (voir les fichiers du dossier example). Respectez bien le format, sinon le script fonctionnera mal et ne rentrera pas dans la base de données le résultat attendu !
+
+Documentation :
+- captureToDB.py : il prend en argument le nom du fichier à insérer.
+Ex : python captureToDB.py example/14-06-2016_08:00:11.txt".txt"
+
+
+English :
+
+You only need to execute the script captureToDB.py to insert a capture into the database.
+The capture is in a file with the same format as the example (see the folder example).
