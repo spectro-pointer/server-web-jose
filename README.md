@@ -8,7 +8,7 @@ Les trois autres dossiers doivent se situer dans /home/pi/<nom du dossier>.
 
 # Description des dossiers :
 Le dossier spectro_pointer contient une interface web pour communiquer avec la base de donnees. 
-Le dossier captures_rsync est le dossier dans lequel seront recuperees les donnees des differents spectro-pointers, avec d'etre traitees puis envoyees si necessaires au serveur.
+Le dossier captures_rsync est le dossier dans lequel seront recuperees les donnees des differents spectro-pointers, avant d'etre traitees puis envoyees si necessaires au serveur.
 Le dossier stockage_scripts contient de nombreux scripts qui ont ete utilises. Certains d'entre eux ne sont que des sauvegardes qui ne sont plus a utiliser, tandis que d'autres sont utiles pour manipuler les spectres.
 Le dossier reference_scripts permet de traiter et d'envoyer a la base de donnees les differentes references calculees.
 
